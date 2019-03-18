@@ -1,3 +1,17 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  color: red;
+}
+
+.intro-text {
+  width: 25%;
+  border: 1px solid black;
+  height: 50vh;
+  margin-top: 25vh;
+  margin-left: 5vw;
+  text-align: center;
+  line-height: 20px;
+}
