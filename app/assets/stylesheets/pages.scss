@@ -1,3 +1,117 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin: 0 0 0 0;
+  padding: none;
+}
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+a {
+  margin-right: 10px;
+  font-family: 'Pontano Sans', sans-serif;
+  color: black;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.background-image1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://static.wixstatic.com/media/3b4fe9_b61e7a4b3f1a45858542cf3449e4a4f7~mv2_d_2768_1848_s_2.jpg/v1/crop/x_210,y_11,w_2493,h_1444/fill/w_1308,h_756,al_c,q_85,usm_0.66_1.00_0.01/3b4fe9_b61e7a4b3f1a45858542cf3449e4a4f7~mv2_d_2768_1848_s_2.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.background-image2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.background-image3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.background-image4 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+// .img-gradient {
+//   background-image:
+//   linear-gradient(100deg,
+//       rgba(28, 49, 53, 0.65),
+//       rgba(0, 0, 0, 0.2))
+// }
+
+.container {
+  height: 100vh;
+}
+
+.section-text {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  text-align: center;
+  color: white;
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+.text {
+  width: 40%;
+  height: 50vh;
+  margin-left: 5vw;
+  text-align: left;
+  line-height: 25px;
+  position: absolute;
+  top: 100px;
+  letter-spacing: 3px;
+}
+
+.texth1 {
+  color: white;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 55px;
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+
+.textp {
+  color: white;
+  font-size: 30px;
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+.other {
+  font-family: 'Pontano Sans', sans-serif;
+}
