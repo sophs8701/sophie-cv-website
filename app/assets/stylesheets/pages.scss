@@ -60,7 +60,7 @@ html {
 .background-image4 {
   width: 100%;
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-image: url(https://images.unsplash.com/photo-1496814795703-e5b242546673?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,13 +75,12 @@ html {
 // }
 
 .container {
-  height: 100vh;
+  // height: 100vh;
 }
 
 .section-text {
   position: absolute;
   top: 6px;
-  left: 16px;
   text-align: center;
   color: white;
   font-family: 'Pontano Sans', sans-serif;
@@ -117,7 +116,6 @@ html {
 }
 
 
-
 .image {
   width: 200px;
   height: 200px;
@@ -129,5 +127,70 @@ html {
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 100%;
+}
 
 
+.display-grid {
+  display: grid;
+  padding-top: 100px;
+  height: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px 16px 16px 16px;
+  padding-top: 16px;
+  text-align: center;
+  height: 300px;
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  transition: transform 1s;
+  &:hover {
+    transform: scale3d(1.04, 1.04, 1.04);
+  }
+}
+
+
+.seekrs {
+  background-image: url(https://images.unsplash.com/photo-1470653503930-01819ee7ec83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.zeroplusone {
+  background-image: url(https://images.unsplash.com/photo-1542156946-bb7c945b1785?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cocktail {
+  background-image: url(https://images.unsplash.com/photo-1542849187-5ec6ea5e6a27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-portfolio {
+  margin: 0 5vw;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
