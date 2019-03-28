@@ -1,25 +1,13 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet');
+
 
 body {
   margin: 0 0 0 0;
   padding: none;
 }
-
-// .navbar {
-//   width: 100%;
-//   background-color: white;
-//   height: 60px;
-//   align-items: center;
-//   justify-content: flex-end;
-//   display: flex;
-// a {
-//   margin-right: 10px;
-//   font-family: 'Pontano Sans', sans-serif;
-//   color: black;
-//   }
-// }
 
 header {
   width: 100%;
@@ -32,6 +20,12 @@ header {
   transition: all 150ms ease 0ms;
   background-color: black;
 }
+
+header.scroll {
+  background-color: black;
+  color: white;
+}
+
 
 .container {
     z-index: 1;
@@ -109,11 +103,12 @@ html {
 .background-image1 {
   width: 100%;
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1478358161113-b0e11994a36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-image: url(https://static.wixstatic.com/media/3b4fe9_b61e7a4b3f1a45858542cf3449e4a4f7~mv2_d_2768_1848_s_2.jpg/v1/crop/x_210,y_11,w_2493,h_1444/fill/w_1308,h_756,al_c,q_85,usm_0.66_1.00_0.01/3b4fe9_b61e7a4b3f1a45858542cf3449e4a4f7~mv2_d_2768_1848_s_2.webp);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: fit;
+  background-size: cover;
   position: relative;
+  z-index: -10;
 }
 
 

@@ -111,4 +111,10 @@
 </div>
 
 
+<script>
+    window.onscroll = () => {
+  const header = document.querySelector('#header');
+  if(this.scrollY <= 10) header = ''; else header.scroll = 'scroll';
+};
 
+</script>
