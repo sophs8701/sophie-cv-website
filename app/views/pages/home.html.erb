@@ -1,11 +1,29 @@
+<header>
+  <div class="container">
+    <div class="column">
+      <nav>
+        <ul>
+          <li><a href="#1">Education</a></li>
+          <li><a href="#2">Skills</a></li>
+          <li><a href="#3">Work Experience</a></li>
+          <li><a href="#4">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+<!--
+
 <div class="navbar d-flex">
-<a href="#1">Education</a>
-<a href="#2">Skills</a>
-<a href="#3">Work Experience</a>
-<a href="#4">Portfolio</a>
-
+  <a href="#1">Education</a>
+  <a href="#2">Skills</a>
+  <a href="#3">Work Experience</a>
+  <a href="#4">Portfolio</a>
 </div>
-
+ -->
 <div class="background-image1 img-gradient">
   <div class="container">
     <div class="text">
@@ -39,18 +57,22 @@
 </div>
 
 <div class="background-image3">
-  <!-- <div class="container"> -->
     <section id="3"></section>
   <div class="section-text text">
     <h1 class="texth1">Work Experience</h1>
-    <p> Digital Project Manager || TSB || 03.18 - 12.18</p>
-    <p> Account Executive || Big Review TV || 02.17 - 08.17</p>
-    <p> Project Manager || Mandara || 10.14 - 12.16</p>
-    <p> Private PA || UHNWI || 02.14 - 09.14</p>
-    <p> EA to COO & CFO || Aspen || 05.12 - 04.14</p>
-    <p> Contract Analyst || IBM || 07.08 - 08.09</p>
+    <p> TSB | Digital Project Manager & Product Owner | (Contract) |  Mar18 -Dec18  |  London</p>
+    <p> TRAVELLING Australia/Asia (Jan17 - Mar18)</p>
+    <p>BIG REVIEW TV |  Account Executive | Feb17 - Aug17 |  Sydney</p>
+    <p> MANDARA ENERGY LTD. - (Oct14 - Dec16) <br>
+      Project Manager  |  Sep15 - Dec16  |  London
+      Compliance Coordinator  | Oct14 - Sep15
+    </p>
+    <p> Personal Assistant  |  Apr14 - Sep14  |  London</p>
+    <p> ASPEN RE  | EA to COO/CFO  |  May12 - Apr14   |  London</p>
+    <p> NICKY CLARKE  |  PA to CEO  |  Oct11 -  May12  |  London</p>
+    <p>IBM | Contract Analyst  |  Jul08 - Jul09  |  London
+</p>
   </div>
-  <!-- </div> -->
 </div>
 
 <div class="other">
@@ -73,24 +95,27 @@
   </div>
 </div>
 
-<div class="portfolio-section d-flex">
-  <section id="4"></section>
-  <div class="image">
-
-  </div>
-  <div class="image">
-
-  </div>
-  <div class="image">
-
+<div class="container-portfolio">
+  <h1 class="texth1" style="color: white">Portfolio</h1>
+  <div class="display-grid">
+    <div class="column">
+      <div class="card seekrs">
+      <p class="card-text">Seekrs</p></div>
+    </div>
+    <div class="column">
+      <div class="card zeroplusone"><p class="card-text">Zeroplusone</p></div>
+    </div>
+    <div class="column">
+      <div class="card cocktail"><p class="card-text">Coming Soon</p></div>
+    </div>
   </div>
 </div>
 
 
+<script>
+    window.onscroll = () => {
+  const header = document.querySelector('#header');
+  if(this.scrollY <= 10) header = ''; else header.scroll = 'scroll';
+};
 
-
-
-
-
-
-
+</script>

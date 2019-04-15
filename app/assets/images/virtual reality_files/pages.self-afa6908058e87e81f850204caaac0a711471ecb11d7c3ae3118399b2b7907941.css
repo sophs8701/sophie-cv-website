@@ -1,117 +1,42 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-@import url('https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet');
-
-
+/* line 5, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 body {
   margin: 0 0 0 0;
   padding: none;
 }
 
-header {
+/* line 10, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
+.navbar {
   width: 100%;
-  position: fixed;
-  top: 0;
-  // z-index: -10;
-  min-width: 320px;
-  font-family: "Pathway Gothic One", sans-serif;
-  text-transform: uppercase;
-  transition: all 150ms ease 0ms;
-  background-color: black;
+  background-color: white;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+/* line 17, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
+.navbar a {
+  margin-right: 10px;
+  font-family: 'Pontano Sans', sans-serif;
+  color: black;
 }
 
-header.scroll {
-  background-color: black;
-  color: white;
-}
-
-
-.container {
-    z-index: 1;
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-@media (min-width: 650px) {
-.container .column:first-child {
-    margin-left: 0;
-  }
-}
-
-header .container .column {
-    height: 100%;
-    flex: 0 0 100%;
-}
-
-// cannot see what this does?
-// @media (min-width: 650px)
-// .container .column {
-// }
-
-.column {
-  display: block;
-}
-
-*, *::before, *:after {
-    box-sizing: inherit;
-}
-
-@media (min-width: 1100px) {
-header nav ul li a{
-    border: none;
-    position: relative;
-    height: 100%;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-  }
-}
-
-ul {
-  text-align: right;
-ul a {
-  color: white;
-}
-}
-
- header nav ul > li {
-            display: inline-block;
-            padding-right: 5px;
-            padding-left: 5px; }
-            header nav ul > li:first-of-type {
-              padding-left: 0; }
-            header nav ul > li:last-of-type {
-              padding-right: 0; }
-          header nav ul li {
-            border: none;
-            position: relative;
-            height: 100%; }
-            header nav ul li.first-active ul::after {
-              border-bottom: 15px solid #DAA25A; }
-
-
-
+/* line 24, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 html {
   scroll-behavior: smooth;
 }
 
+/* line 28, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .background-image1 {
   width: 100%;
   height: 100vh;
-  background-image: url(https://static.wixstatic.com/media/3b4fe9_b61e7a4b3f1a45858542cf3449e4a4f7~mv2_d_2768_1848_s_2.jpg/v1/crop/x_210,y_11,w_2493,h_1444/fill/w_1308,h_756,al_c,q_85,usm_0.66_1.00_0.01/3b4fe9_b61e7a4b3f1a45858542cf3449e4a4f7~mv2_d_2768_1848_s_2.webp);
+  background-image: url(https://images.unsplash.com/photo-1478358161113-b0e11994a36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fit;
   position: relative;
-  z-index: -10;
 }
 
-
+/* line 39, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .background-image2 {
   width: 100%;
   height: 100vh;
@@ -122,7 +47,7 @@ html {
   position: relative;
 }
 
-
+/* line 50, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .background-image3 {
   width: 100%;
   height: 100vh;
@@ -133,6 +58,7 @@ html {
   position: relative;
 }
 
+/* line 60, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .background-image4 {
   width: 100%;
   height: 100vh;
@@ -143,17 +69,7 @@ html {
   position: relative;
 }
 
-// .img-gradient {
-//   background-image:
-//   linear-gradient(100deg,
-//       rgba(28, 49, 53, 0.65),
-//       rgba(0, 0, 0, 0.2))
-// }
-
-// .container {
-//   // height: 100vh;
-// }
-
+/* line 81, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .section-text {
   position: absolute;
   top: 6px;
@@ -162,6 +78,7 @@ html {
   font-family: 'Pontano Sans', sans-serif;
 }
 
+/* line 89, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .text {
   width: 40%;
   height: 50vh;
@@ -173,6 +90,7 @@ html {
   letter-spacing: 3px;
 }
 
+/* line 100, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .texth1 {
   color: white;
   font-family: 'Pontano Sans', sans-serif;
@@ -181,17 +99,19 @@ html {
   padding-bottom: 5px;
 }
 
+/* line 108, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .textp {
   color: white;
   font-size: 30px;
   font-family: 'Pontano Sans', sans-serif;
 }
 
+/* line 114, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .other {
   font-family: 'Pontano Sans', sans-serif;
 }
 
-
+/* line 119, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .image {
   width: 200px;
   height: 200px;
@@ -199,25 +119,26 @@ html {
   margin-top: 50px;
   background-image: url(https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   background-size: cover;
-  // position: relative;
 }
 
-
+/* line 130, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 134, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Float four columns side by side */
+/* line 139, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .column {
   float: left;
   width: 100%;
 }
 
-
+/* line 145, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .display-grid {
   display: grid;
   padding-top: 40px;
@@ -225,7 +146,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-
+/* line 153, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 16px 16px 16px 16px;
@@ -235,46 +156,40 @@ body {
   background-color: #f1f1f1;
   border-radius: 2px;
   transition: transform 1s;
-  &:hover {
-    transform: scale3d(1.04, 1.04, 1.04);
-  }
+}
+/* line 162, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
+.card:hover {
+  transform: scale3d(1.04, 1.04, 1.04);
 }
 
-
+/* line 168, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .seekrs {
   background-image: url(https://images.unsplash.com/photo-1470653503930-01819ee7ec83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* line 174, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .zeroplusone {
   background-image: url(https://images.unsplash.com/photo-1542156946-bb7c945b1785?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* line 180, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .cocktail {
   background-image: url(https://images.unsplash.com/photo-1542849187-5ec6ea5e6a27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-.card-text {
-  color: white;
-  font-weight: lighter;
-  font-size: 30px;
-  font-family: "Pathway Gothic One", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-
+/* line 186, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
 .container-portfolio {
   margin: 0 5vw;
 }
 
 @media screen and (max-width: 600px) {
+  /* line 191, /Users/sophiespratley/code/sophie-cv-website/app/assets/stylesheets/pages.scss */
   .column {
     width: 100%;
     display: block;
